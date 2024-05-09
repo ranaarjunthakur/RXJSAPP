@@ -40,7 +40,8 @@ import { CompleteRxjsComponent } from './components/observable/complete-rxjs/com
 
 const routes: Routes = [
   {
-    path: ' ',
+    path: '',
+    pathMatch: 'full',
     redirectTo: 'promise'
   },
   {
@@ -183,6 +184,7 @@ const routes: Routes = [
   },
   {
     path: '**',
+    pathMatch: 'full',
     redirectTo: 'promise'
   }
 ];
