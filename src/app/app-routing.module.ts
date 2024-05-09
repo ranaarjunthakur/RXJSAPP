@@ -40,6 +40,10 @@ import { CompleteRxjsComponent } from './components/observable/complete-rxjs/com
 
 const routes: Routes = [
   {
+    path: ' ',
+    redirectTo: 'promise'
+  },
+  {
     path: 'hotel',
     component: ChildHotelComponent
   },
