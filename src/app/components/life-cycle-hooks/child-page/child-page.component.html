@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card text-center align-content-center mt-2">
+                <p> Here is the user name: <span class="text-warning">{{ Name }}</span> </p>
+                <p class="card-number">4242 8224 6317 0005</p>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <li *ngFor="let item of data">{{ item }}</li>
+              </ul>
+              <button mat-raised-button color="warn" (click)="refresh()">Refresh</button>
+        </div>
+    </div>
+</div>

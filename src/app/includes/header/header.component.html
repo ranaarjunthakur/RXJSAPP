@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-muted" >
+            <img src="https://rxjs.dev/assets/images/logos/logo.png" alt="Bootstrap">
+            <strong *ngIf="exclusive" class="badge text-bg-info text-white">Exclusive</strong>
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item"> 
+            <div class="nav-link">
+                <button class="text-muted" mat-raised-button color="warn" routerLink="promise">Promise</button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link">
+                <button class="text-muted" mat-raised-button color="accent" routerLink="observable">Observable</button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link">
+                <button class="text-muted" mat-raised-button color="accent" routerLink="hooks">Hooks</button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link">
+                <button mat-raised-button color="primary"  routerLink="interceptor" >Http Interceptor</button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link">
+                <button mat-raised-button color="primary"  routerLink="counter" >Angular Signals</button>
+            </div>
+          </li>
+        </ul>
+        <div>
+            <a class="nav-link">
+              <app-sample></app-sample>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>

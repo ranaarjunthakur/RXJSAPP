@@ -1,0 +1,26 @@
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-12">
+            <button (click)="updateUser()" class="btn btn-success">Update</button>
+            <button (click)="destroy()" class="btn btn-danger mx-1">Destroy Child</button>
+        </div>
+        <div class="cil-md-12">
+            <app-child-page *ngIf="!isChildDestroyed" [Name]="userName"  [data]="aquaticCreatures">
+                <div #contentWrapper>foo</div>
+            </app-child-page>
+            <div *ngIf="isChildDestroyed">Child component is destroyed! :(</div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-6">
+        
+                <input class="form-control" #inputAquaticCreature type="text" placeholder="Enter a new creature">
+                <button (click)="addAquaticCreature(inputAquaticCreature.value)" class="btn btn-success">Add  Creature</button>
+            
+        </div>
+    </div>
+</div>
+
+
