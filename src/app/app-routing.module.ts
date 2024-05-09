@@ -42,7 +42,8 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'promise'
+    redirectTo: 'promise',
+    component: PromiseComponent
   },
   {
     path: 'hotel',
