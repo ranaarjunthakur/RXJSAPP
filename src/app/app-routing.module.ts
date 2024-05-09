@@ -39,11 +39,11 @@ import { CompleteRxjsComponent } from './components/observable/complete-rxjs/com
 
 
 const routes: Routes = [
-  {
-    path: '',
-    // pathMatch: 'full',
-    component: PromiseComponent
-  },
+  // {
+  //   path: '',
+  //   // pathMatch: 'full',
+  //   component: PromiseComponent
+  // },
   {
     path: 'hotel',
     component: ChildHotelComponent
